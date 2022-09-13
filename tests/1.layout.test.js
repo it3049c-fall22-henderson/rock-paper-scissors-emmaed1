@@ -78,7 +78,7 @@ describe(`html content`, function () {
   test(`#welcome-screen form button's text is (Start Game!) and id is(start-game-button)`, function() {
     const formButton = document.querySelector(`#welcome-screen > form > button`);
 
-    expect(formButton).toHaveTextContent(/start game(.)+/i);
+    expect(formButton).toHaveTextContent(/start game(.)+/);
     expect(formButton).toHaveAttribute(`id`, `start-game-button`);
   });
 
